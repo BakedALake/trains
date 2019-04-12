@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Trains</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+</head>
+
+<body>
+  <div id="displayRow" class="row">
+    <div class="col-2 col">
+      <!-- Blank for Spacing -->
+    </div>
+
+    <div class="col-8 col">
+      <div class="card">
+        <div class="card-header">
+          Current Train Schedule
+        </div>
+        <div class="card-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="bold" scope="col">Train Name</th>
+                <th class="bold" scope="col">Destination</th>
+                <th class="bold" scope="col">Frequency (min)</th>
+                <th class="bold" scope="col">Next Arrival</th>
+                <th class="bold" scope="col">Minutes Away</th>
+              </tr>
+            </thead>
+            <tbody id="trainTable">
+              <!-- <tr>    This is an example row to see formatting.
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr> -->
+              <tr></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-2 col">
+      <!-- Blank for Spacing -->
+    </div>
+  </div>
+
+  <div id="enterRow" class="row">
+    <div class="col-2 col">
+      <!-- Blank for Spacing -->
+    </div>
+
+    <div class="col-8 col">
+      <div class="card">
+        <div class="card-header">
+          Add Train
+        </div>
+        <div class="card-body">
+          <div class="bold left">
+            Train Name
+          </div>
+          <input type="text" class="form-control" id="inputName">
+          <div class="bold left">
+            Destination
+          </div>
+          <input type="text" class="form-control" id="inputDestination">
+          <div class="bold left">
+            First Train Time (HH:mm - military time)
+          </div>
+          <input type="text" class="form-control" id="inputTime">
+          <div class="bold left">
+            Frequency (min)
+          </div>
+          <input type="text" class="form-control" id="inputFrequency">
+          <div>
+            <input id="submitButton" class="btn btn-primary" type="submit" value="Submit">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-2 col">
+      <!-- Blank for Spacing -->
+    </div>
+  </div>
+
+
+
+  <script src="./assets/javascript/game.js"></script>
+
+</body>
+
+</html>

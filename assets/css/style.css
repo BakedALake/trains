@@ -1,0 +1,30 @@
+.card{
+    margin: 25px;
+}
+
+.card-header{
+    width: 100%;
+    text-align: left;
+}
+
+.row{
+    border: red dashed 2px;
+    text-align: center;
+}
+
+.col{
+    border: blue solid 1px;
+}
+
+.btn{
+    margin: 25px 0px 0px 0px;
+}
+
+.bold{
+    font-weight: bolder;
+}
+
+.left{
+    text-align: left;
+    margin: 10px 0px 5px 0px;
+}
